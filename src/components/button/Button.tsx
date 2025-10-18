@@ -11,18 +11,18 @@ type variants =
   | "success";
 
 type Button = ComponentProps<"button"> & {
-  variant: variants;
+  variant?: variants;
 };
 
 function Button({ children, className, variant, ...rest }: Button) {
   return (
-    <button {...rest} className={`${checkVariant(variant)} ${className ?? ""}`}>
+    <button {...rest} className={`${checkVariant(variant)} ${className ?? ""} rounded-2xl p-2 mt-2`}>
       {children}
     </button>
   );
 }
 
-function checkVariant(variant: variants) {
+function checkVariant(variant?: variants) {
   switch (variant) {
     case "primary":
       return "bg-blue-500 text-white hover:bg-blue-600";

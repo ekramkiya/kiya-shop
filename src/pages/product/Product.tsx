@@ -1,4 +1,4 @@
-import Button from "../../components/button/button";
+import Button from "../../components/button/Button";
 import Container from "../../components/container/Container";
 
 function Product() {
@@ -23,14 +23,9 @@ function Product() {
               src="https://images-cdn.a.ubuy.com.kw/642b42a3fd538304121dbe5a-olome-hip-hop-mens-casual-shoes-zapatos.jpg"
               alt=""
             />
-            <Button className="p-1" variant="success">افزودن به سبد خرید</Button>
-            <Button variant="primary">افزودن به سبد خرید</Button>
-            <Button variant="secondary">افزودن به سبد خرید</Button>
-            <Button variant="danger">افزودن به سبد خرید</Button>
-            <Button variant="warning">افزودن به سبد خرید</Button>
-            <Button variant="info">افزودن به سبد خرید</Button>
-            <Button variant="light">افزودن به سبد خرید</Button>
-            <Button variant="dark">افزودن به سبد خرید</Button>
+            <Button className="w-full py-3" variant="primary">افزودن به سبد خرید</Button>
+           
+           
           </div>
         </div>
       </Container>
