@@ -9,3 +9,9 @@ const client = axios.create({
   return data;
  
 }
+
+
+export async function getProduct(id:number | string){
+    const {data} = await client.get(`/products/${id}`);
+    return data;
+}

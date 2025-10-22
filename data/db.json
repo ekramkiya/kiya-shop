@@ -1,103 +1,101 @@
 {
   "products": 
   [
-  {
-    "id":" 1",
-    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-    "price": 109.95,
-    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    "category": "men's clothing",
-    "image": "https://img.freepik.com/free-photo/flat-lay-natural-self-care-products-composition_23-2148990019.jpg?semt=ais_hybrid&w=740&q=80",
-    "rating": {
-      "rate": 3.9,
-      "count": 120
+    {
+      "id":"1",
+      "title": "کوله پشتی Fjallraven - مدل Foldsack No. 1، مناسب برای لپ‌تاپ‌های تا 15 اینچ",
+      "price": 109.95,
+      "description": "کوله پشتی ایده‌آل برای استفاده روزمره و پیاده‌روی در جنگل. لپ‌تاپ خود را (تا ۱۵ اینچ) در جیب مخصوص با پوشش نرم قرار دهید، و لوازم روزانه‌تان را نیز در آن جای دهید.",
+      "category": "لباس مردانه",
+      "image": "https://img.freepik.com/free-photo/flat-lay-natural-self-care-products-composition_23-2148990019.jpg?semt=ais_hybrid&w=740&q=80",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "2",
+      "title": "پیراهن تیشرت مردانه اسلیم فیت با کیفیت عالی",
+      "price": 22.3,
+      "description": "طراحی باریک، آستین‌های رنگی متفاوت، دکمه‌دار با سه دکمه در جلو، پارچه سبک و نرم برای تنفس پوست و راحتی در استفاده روزمره. با یقه گرد و دوخت محکم، مناسب برای استایل کژوال و علاقه‌مندان به بیسبال.",
+      "category": "لباس مردانه",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+      "rating": {
+        "rate": 4.1,
+        "count": 259
+      }
+    },
+    {
+      "id": "3",
+      "title": "کتن مردانه",
+      "price": 55.99,
+      "description": "کت‌های بیرونی عالی برای بهار، پاییز و زمستان، مناسب برای موقعیت‌های مختلف مانند کار، پیاده‌روی، کمپینگ، کوهنوردی، دوچرخه‌سواری، سفر و فعالیت‌های خارج از منزل. انتخاب خوب برای هدیه دادن به پدر، همسر یا پسر در روزهای شکرگزاری یا کریسمس.",
+      "category": "لباس مردانه",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/013/882/809/small/foodstuff-for-donation-storage-and-delivery-various-food-pasta-cooking-oil-and-canned-food-in-cardboard-box-photo.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 500
+      }
+    },
+    {
+      "id": "4",
+      "title": "پیراهن اسلیم فیت مردانه کژوال",
+      "price": 15.99,
+      "description": "رنگ ممکن است کمی بین صفحه نمایش و واقعیت متفاوت باشد. لطفاً توجه کنید که ساختار بدن هر فرد متفاوت است، بنابراین اطلاعات دقیق سایز را در توضیحات محصول مطالعه کنید.",
+      "category": "لباس مردانه",
+      "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
+      "rating": {
+        "rate": 2.1,
+        "count": 430
+      }
+    },
+    {
+      "id": "5",
+      "title": "گردنبند زنانه John Hardy از مجموعه Legends",
+      "price": 695,
+      "description": "از مجموعه Legends، Naga الهام گرفته شده از اژدهای افسانه‌ای آب است که از مروارید اقیانوس محافظت می‌کند. اگر رو به داخل پوشیده شود، عشق و فراوانی را به ارمغان می‌آورد و اگر رو به بیرون باشد، محافظت می‌کند.",
+      "category": "جواهرات",
+      "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+      "rating": {
+        "rate": 4.6,
+        "count": 400
+      }
+    },
+    {
+      "id": "6",
+      "title": "طلای خالص میکروپیو",
+      "price": 168,
+      "description": "رضایت شما تضمین شده است. هر سفارش را تا ۳۰ روز می‌توانید بازگردانید یا تعویض کنید. طراحی و فروش توسط مرکز Hafeez در ایالات متحده آمریکا.",
+      "category": "جواهرات",
+      "image": "https://img.freepik.com/premium-vector/cosmetics-product-sale-social-media-advertisement-poster-design-vector-with-blue-color_1003782-1812.jpg?semt=ais_hybrid&w=740&q=80",
+      "rating": {
+        "rate": 3.9,
+        "count": 70
+      }
+    },
+    {
+      "id": "7",
+      "title": "انگشتر کلاسیک طلای سفید مدل پرنسس",
+      "price": 9.99,
+      "description": "انگشتر وعده ازدواج ساخته شده به صورت کلاسیک و ساخته شده برای عشق شما. هدیه‌ای برای نامزدی، عروسی، سالگرد یا روز ولنتاین.",
+      "category": "جواهرات",
+      "image": "https://img.freepik.com/premium-vector/cosmetics-product-sale-social-media-advertisement-poster-design-vector-with-blue-color_1003782-1812.jpg?semt=ais_hybrid&w=740&q=80",
+      "rating": {
+        "rate": 3,
+        "count": 400
+      }
+    },
+    {
+      "id":"8",
+      "title": "گوشواره رز گلد با طرح جغد و دو فلر",
+      "price": 10.99,
+      "description": "گوشواره رزگلد با طرح دو فلر تونل. ساخته شده از استیل ضدزنگ ۳۱۶L.",
+      "category": "جواهرات",
+      "image": "https://i.insider.com/5ed95c393f7370198527eea3?width=700",
+      "rating": {
+        "rate": 1.9,
+        "count": 100
+      }
     }
-  },
-  {
-    "id": "2",
-    "title": "Mens Casual Premium Slim Fit T-Shirts ",
-    "price": 22.3,
-    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-    "category": "men's clothing",
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
-    "rating": {
-      "rate": 4.1,
-      "count": 259
-    }
-  },
-  {
-    "id": "3",
-    "title": "Mens Cotton Jacket",
-    "price": 55.99,
-    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-    "category": "men's clothing",
-    "image": "https://static.vecteezy.com/system/resources/thumbnails/013/882/809/small/foodstuff-for-donation-storage-and-delivery-various-food-pasta-cooking-oil-and-canned-food-in-cardboard-box-photo.jpg",
-    "rating": {
-      "rate": 4.7,
-      "count": 500
-    }
-  },
-  {
-    "id": "4",
-    "title": "Mens Casual Slim Fit",
-    "price": 15.99,
-    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-    "category": "men's clothing",
-    "image": "https://www.shutterstock.com/image-photo/cosmetics-packaging-set-different-cosmetic-600nw-2109839063.jpg",
-    "rating": {
-      "rate": 2.1,
-      "count": 430
-    }
-  },
-  {
-    "id": "5",
-    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-    "price": 695,
-    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    "category": "jewelery",
-    "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
-    "rating": {
-      "rate": 4.6,
-      "count": 400
-    }
-  },
-  {
-    "id": "6",
-    "title": "Solid Gold Petite Micropave ",
-    "price": 168,
-    "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-    "category": "jewelery",
-    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
-    "rating": {
-      "rate": 3.9,
-      "count": 70
-    }
-  },
-  {
-    "id": "7",
-    "title": "White Gold Plated Princess",
-    "price": 9.99,
-    "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-    "category": "jewelery",
-    "image": "https://img.freepik.com/premium-vector/cosmetics-product-sale-social-media-advertisement-poster-design-vector-with-blue-color_1003782-1812.jpg?semt=ais_hybrid&w=740&q=80",
-    "rating": {
-      "rate": 3,
-      "count": 400
-    }
-  },
-  {
-    "id":" 8",
-    "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-    "price": 10.99,
-    "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-    "category": "jewelery",
-    "image": "https://i.insider.com/5ed95c393f7370198527eea3?width=700",
-    "rating": {
-      "rate": 1.9,
-      "count": 100
-    }
-  }
- 
-]
- 
+  ]
 }
