@@ -20,7 +20,7 @@ interface ShoppingCartContext {
   handleRemoveProduct: (id: number) => void;
   cartQty: number;
   isLogin: boolean;
-  handleLogin: () => void;
+  handleLogin: (username:string, password:string)=>void;
   handleLogout: () => void;
 }
 
@@ -91,10 +91,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProvider) {
 
   const [isLogin, setIsLogin] = useState(false);
    const navigate = useNavigate();
-  const handleLogin = () => {
+  const handleLogin = (username:string, password:string) => {
     let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY3Mjc2NjAyOCwiZXhwIjoxNjc0NDk0MDI4fQ.kCak9sLJr74frSRVQp0_27BY4iBCgQSmoT3vQVWKzJg"
     localStorage.setItem("token",token);
-    login("kiya", "1234").finally(() => {
+    login(username, password).finally(() => {
       setIsLogin(true);
       navigate("/")
     });

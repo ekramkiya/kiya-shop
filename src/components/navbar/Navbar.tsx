@@ -31,7 +31,7 @@ function Navbar() {
                 className="text-gray-700"
               />
             </Link>
-            <span className="absolute w-6 h-6 bg-amber-300 flex justify-center items-center rounded-full text-white top-1 left-17 text-xs">
+            <span className="absolute w-6 h-6 bg-amber-300 flex justify-center items-center rounded-full text-white top-0 left-26 text-xs">
               {cartQty !== 0 ? cartQty : ""}
             </span>
           </div>
