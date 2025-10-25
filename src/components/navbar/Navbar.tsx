@@ -4,9 +4,11 @@ import { useContext } from "react";
 import { ShoppingCartContext } from "../../context/ShoppingCartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Button from "../button/Button";
 
 function Navbar() {
-  const { cartQty } = useContext(ShoppingCartContext);
+ 
+  const { handleLogout,cartQty } = useContext(ShoppingCartContext);
   return (
     <div className="h-15 border-b border-b-gray-300 shadow  flex items-center px-4">
       <Container>
@@ -21,6 +23,7 @@ function Navbar() {
           </ul>
 
           <div>
+            <Button onClick={handleLogout}>خروج</Button>
             <Link className="relative" to={"/cart"}>
               <FontAwesomeIcon
                 icon={faShoppingCart}

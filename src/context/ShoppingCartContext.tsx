@@ -1,4 +1,7 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { login } from "../services/api";
+import { useNavigate } from "react-router-dom";
 
 interface ShoppingCartProvider {
   children: React.ReactNode;
@@ -15,7 +18,10 @@ interface ShoppingCartContext {
   handleDecreaseProductQty: (id: number) => void;
   getProductQty: (id: number) => number;
   handleRemoveProduct: (id: number) => void;
-    cartQty:number;
+  cartQty: number;
+  isLogin: boolean;
+  handleLogin: () => void;
+  handleLogout: () => void;
 }
 
 export const ShoppingCartContext = createContext({} as ShoppingCartContext);
@@ -25,7 +31,10 @@ export const useShoppingCartContext = () => {
 };
 
 export function ShoppingCartProvider({ children }: ShoppingCartProvider) {
-  const [cartitems, setcartitems] = useState<cartItem[]>([]);
+  const [cartitems, setcartitems] = useLocalStorage<cartItem[]>(
+    "cartItems",
+    []
+  );
 
   const handleIncreaseProductQty = (id: number) => {
     setcartitems((currentItems) => {
@@ -75,10 +84,37 @@ export function ShoppingCartProvider({ children }: ShoppingCartProvider) {
     });
   };
 
-  const cartQty = cartitems.reduce((totalQty, item)=>{
+  const cartQty = cartitems.reduce((totalQty, item) => {
+    return totalQty + item.qty;
+  }, 0);
 
-    return totalQty + item.qty
-  },0)
+
+  const [isLogin, setIsLogin] = useState(false);
+   const navigate = useNavigate();
+  const handleLogin = () => {
+    let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY3Mjc2NjAyOCwiZXhwIjoxNjc0NDk0MDI4fQ.kCak9sLJr74frSRVQp0_27BY4iBCgQSmoT3vQVWKzJg"
+    localStorage.setItem("token",token);
+    login("kiya", "1234").finally(() => {
+      setIsLogin(true);
+      navigate("/")
+    });
+  };
+
+  const handleLogout = () => {
+    setIsLogin(false);
+    navigate("/login")
+    localStorage.removeItem("token")
+  };
+
+  useEffect(() => {
+    let token = localStorage.getItem("token") 
+
+    if(token){
+      setIsLogin(true)
+    }
+
+  }, [])
+  
   return (
     <ShoppingCartContext.Provider
       value={{
@@ -87,7 +123,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProvider) {
         handleDecreaseProductQty,
         getProductQty,
         handleRemoveProduct,
-        cartQty
+        cartQty,
+        isLogin,
+        handleLogin,
+        handleLogout,
       }}
     >
       {children}
